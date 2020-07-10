@@ -15,6 +15,5 @@ Applying concepts and techniches of Data Engeering (ETL Pipelines, especially Ma
 
 ## Implementation
 1. Setting up the database and model
-   - Run the ETL pipeline that cleans the raw data (csv) and stores it in a database: ```python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db ```
-
-2. 
+   - Run the ETL pipeline that cleans (process_data.py) the raw data (disaster_messages.csv) and stores it in a database(DisasterResponse.db): ```python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db ```
+   - Run ML pipeline that trains the classifier (train_classifier.py) and saves it (classifier.pkl): ```python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl ```
