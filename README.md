@@ -21,3 +21,12 @@ Applying concepts and techniches of Data Engeering (ETL Pipelines, especially Ma
    
 2. Running the web app: ```python run.py```
 3. Goto the link: [http://0.0.0.0:3001/](http://0.0.0.0:3001/)
+
+Below are some screenshots of how the web application looks:
+![app1](https://user-images.githubusercontent.com/34100245/87163183-94066300-c2e4-11ea-8eca-954161b70370.PNG)
+
+--------
+
+## Example
+Type a sample distress message: "We have a lot of problem at Delma 75 Avenue Albert Jode, those people need water and food"
+![app3](https://user-images.githubusercontent.com/34100245/87163040-628d9780-c2e4-11ea-8aec-a1dee933cce6.png)
