@@ -14,5 +14,7 @@ Applying concepts and techniches of Data Engeering (ETL Pipelines, especially Ma
 ------
 
 ## Implementation
-1. 
+1. Setting up the database and model
+   - Run the ETL pipeline that cleans the raw data (csv) and stores it in a database: ```python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db ```
 
+2. 
