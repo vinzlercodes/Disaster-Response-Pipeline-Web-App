@@ -1,11 +1,15 @@
 # %% [code]
-#importing libraries
+'''
+importing libraries
+'''
 import sys
 import pandas as pd
 from sqlalchemy import create_engine
 
 # %% [code]
-#loading the data 
+'''
+loading the data 
+'''
 def loading_data(messages_path, categories_path):
 
     try:
@@ -17,7 +21,9 @@ def loading_data(messages_path, categories_path):
         print("file not found!")
 
 # %% [code]
-#cleaning the data
+'''
+cleaning the data
+'''
 def cleaning_data(data):
 
     data_categories = data['categories'].str.split(';',expand = True)
@@ -25,11 +31,17 @@ def cleaning_data(data):
     category_cols = data_row.apply(lambda x: x[:-2]).values.tolist()
     data_categories.columns = category_cols
 
-    #changing the cloumn shape
+    '''
+    changing the cloumn shape
+    '''
     for column in data_categories:
-        # setting each value to the last character of the string
+        '''
+        setting each value to the last character of the string
+        '''
         data_categories[column] = data_categories[column].astype(str).str[-1]
-        # converting the column from string to numeric
+        '''
+        converting the column from string to numeric
+        '''
         data_categories[column] = data_categories[column].astype(int)
     
     data.drop('categories',axis = 1, inplace = True)
@@ -40,7 +52,9 @@ def cleaning_data(data):
     return data
 
 # %% [code]
-#saving data to SQLite DB
+'''
+saving the cleaned data to a SQLite Database
+'''
 def store_data(data, database_name):
     engine = create_engine('sqlite:///'+database_name)
     data.to_sql('Processed_Message', engine, index=False)
