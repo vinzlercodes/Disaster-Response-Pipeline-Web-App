@@ -43,7 +43,7 @@ data = pd.read_sql_table('Processed_Message', engine)
 
 # %% [code]
 #loading the model
-model = joblib.load("../models/classifier.pkl")
+model = joblib.load("../model/classifier.pkl")
 
 # %% [code]
 # index webpage displays cool visuals and receives user input text for model
