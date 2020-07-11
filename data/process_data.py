@@ -35,13 +35,17 @@ def cleaning_data(data):
     changing the cloumn shape
     '''
     for column in data_categories:
+        
         '''
         setting each value to the last character of the string
         '''
+        
         data_categories[column] = data_categories[column].astype(str).str[-1]
+        
         '''
         converting the column from string to numeric
         '''
+        
         data_categories[column] = data_categories[column].astype(int)
     
     data.drop('categories',axis = 1, inplace = True)
