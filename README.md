@@ -30,3 +30,10 @@ Below are some screenshots of how the web application looks:
 ## Example
 Type a sample distress message: "We have a lot of problem at Delma 75 Avenue Albert Jode, those people need water and food"
 ![app3](https://user-images.githubusercontent.com/34100245/87163040-628d9780-c2e4-11ea-8aec-a1dee933cce6.png)
+
+---
+
+If you do find this repository useful, why not give a star and even let me know about it!
+
+Feel free to express issues and feedback as well, cheers!
+
