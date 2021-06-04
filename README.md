@@ -4,7 +4,7 @@ An end-end ETL pipeline utilising both an NLP and a Machine Learning Pipeline sy
 -------
 
 ## Project Inspiration
-Applying concepts and techniches of Data Engeering (ETL Pipelines, especially Machine Learning and NLP Pipelies) on a disaster messages dataset by Figure Eight to build a model for an API that classifies disaster messages.
+Applying concepts and techniques of Data Engeering (ETL Pipelines, especially Machine Learning and NLP Pipelies) on a disaster messages dataset by Figure Eight to build a model for an API that classifies disaster messages.
 
 ------
 
